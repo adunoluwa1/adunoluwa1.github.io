@@ -13,6 +13,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
+
 	<body class="is-preload">
 
 		<!-- Wrapper -->
@@ -39,23 +40,49 @@
 
 				<!-- Nav -->
 					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="#danalysis">Data Analysis</a></li>
-							<li class="active"><a href="#dengineering">Data & Analytics Engineering</a></li>
-							<li class="active"><a href="#footer">Contact Me</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/adunoluwaolutola/" class="icon brands alt fa-linkedin"><span class="label">linkedin</span></a></li>
-							<li><a href="https://www.github.com/adunoluwa1/" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
+					<ul class="links">
+						<li class="active">
+							<a href="#" data-target="engineering">Analytics Engineering</a>
+						</li>
+						<li>
+							<a href="#" data-target="analysis">Data Analysis</a>
+						</li>
+						<li>
+							<a href="#footer">Contact Me</a>
+						</li>
+					</ul>
+
+					<ul class="icons">
+						<li>
+						<a href="https://www.linkedin.com/in/adunoluwaolutola/"
+							class="icon brands alt fa-linkedin">
+							<span class="label">linkedin</span>
+						</a>
+						</li>
+						<li>
+						<a href="https://www.github.com/adunoluwa1/"
+							class="icon brands alt fa-github">
+							<span class="label">GitHub</span>
+						</a>
+						</li>
+					</ul>
 					</nav>
 
 				<!-- Main -->
-					<div id="main">
+					<!--  Data Engineering Section -->
+					<section id="engineering" class="tab-content active">
+						<div id="main">
+							<!-- Header - Data Engineering -->
+							<!-- <header class="major">
+								<h2>Data & Analytics Engineering Projects</h2>
+								<p>
+									Production-style data pipelines, analytics engineering workflows, and scalable data transformations designed to support BI, experimentation, and decision-making.
+								</p>
+							</header> -->
 
-						<!-- Featured Post -->
-						 	<article class="post featured">
-								<header>
+							<!-- Featured Post - Pyspark -->
+							<article class="post featured">
+								<header class="major">
 									<h2>
 										<a href="https://github.com/adunoluwa1/Retail-ETL-Pipeline-with-Pyspark">
 											Retail Data Mart ETL Pipeline (PySpark)
@@ -84,36 +111,16 @@
 									<li><a href="https://github.com/adunoluwa1/Retail-ETL-Pipeline-with-Pyspark" class="button">View Project</a></li>
 								</ul>
 							</article>
-							
-							<article>
-								<header class="major">
-									<h2><a href="https://github.com/adunoluwa1/ML-Customer-Retention-Analysis">Customer Retention Analysis<br />
-									</a></h2>
-									<p>In this project, I analysed customer retention in a telecommunication company and extracted insights from visuals using Power BI. Also, I predicted customer churn using machine learning on Python. <br />
-									<br />
-									</p>
-								</header>
-								<a href="https://github.com/adunoluwa1/ML-Customer-Retention-Analysis" class="image main"><img src="images/Marketing 2.jpeg" alt="Customer Retention Analysis" /></a>
-								<ul class="actions special">
-									<li><a href="https://github.com/adunoluwa1/ML-Customer-Retention-Analysis" class="button large">View Project</a></li>
-								</ul>
-							</article>
 
-						<header class="major" id="dengineering">
-							<h2>Data & Analytics Engineering Projects</h2>
-							<p>
-								Production-style data pipelines, analytics engineering workflows, and scalable data transformations designed to support BI, experimentation, and decision-making.
-							</p>
-						</header>
-
+							<!-- Posts -->
 							<section class="posts">
 									<article>
 										<header>
-											<h3>
+											<h2>
 												<a href="https://github.com/adunoluwa1/Retail-ELT-with-DBT">
 													Retail Analytics Engineering (dbt)
 												</a>
-											</h3>
+											</h2>
 										</header>
 										<a href="https://github.com/adunoluwa1/Retail-ELT-with-DBT" class="image fit">
 											<img src="images/dbt.jpg" alt="dbt Analytics Engineering Project" />
@@ -150,11 +157,11 @@
 
 									<article>
 										<header>
-											<h3>
+											<h2>
 												<a href="https://github.com/adunoluwa1/ELT-Pipeline-with-DLT-DBT">
 													ELT Pipeline with DLT & dbt (REST API → Analytics Marts)
 												</a>
-											</h3>
+											</h2>
 										</header>
 
 										<a href="https://github.com/adunoluwa1/ELT-Pipeline-with-DLT-DBT" class="image fit">
@@ -195,11 +202,11 @@
 
 									<article>
 										<header>
-											<h3>
+											<h2>
 												<a href="https://github.com/adunoluwa1/File-to-Database-Loader">
 													CSV to PostgreSQL Data Loader
 												</a>
-											</h3>
+											</h2>
 										</header>
 										<a href="https://github.com/adunoluwa1/File-to-Database-Loader" class="image fit">
 											<img src="images/csv2postgres.jpg" alt="CSV to Database Loader" />
@@ -221,11 +228,11 @@
 									</article>
 									<article>
 										<header>
-											<h3>
+											<h2>
 												<a href="https://github.com/adunoluwa1/File-Converter">
 													CSV to JSON Data Conversion Tool
 												</a>
-											</h3>
+											</h2>
 										</header>
 										<a href="https://github.com/adunoluwa1/File-Converter" class="image fit">
 											<img src="images/csv2json.jpg" alt="CSV to JSON Converter" />
@@ -246,27 +253,38 @@
 										</ul>
 									</article>
 							</section>
+						</div>
+					</section> <!-- end engineering tab -->
+						
+						
+					<!--  Data Analysis Section -->
+					<section id="analysis" class="tab-content">
+						<div id="main">
+							<!-- Header - Data Analysis -->
+							<!-- <header class="major">
+								<h2>Data Analysis Projects</h2>
+								<p>
+									Production-style data pipelines, analytics engineering workflows, and scalable data transformations designed to support BI, experimentation, and decision-making.
+								</p>
+							</header> -->
 
-						<header class="major" id="danalysis">
-							<h2>Data Analysis Projects</h2>
-							<p>
-								Production-style data pipelines, analytics engineering workflows, and scalable data transformations designed to support BI, experimentation, and decision-making.
-							</p>
-						</header>
+							<!-- Featured Post - Customer Retention Analysis -->
+							<article class="post featured">
+								<header class="major">
+									<h2><a href="https://github.com/adunoluwa1/ML-Customer-Retention-Analysis">Customer Retention Analysis<br />
+									</a></h2>
+									<p>In this project, I analysed customer retention in a telecommunication company and extracted insights from visuals using Power BI. Also, I predicted customer churn using machine learning on Python. <br />
+									<br />
+									</p>
+								</header>
+								<a href="https://github.com/adunoluwa1/ML-Customer-Retention-Analysis" class="image main"><img src="images/Marketing 2.jpeg" alt="Customer Retention Analysis" /></a>
+								<ul class="actions special">
+									<li><a href="https://github.com/adunoluwa1/ML-Customer-Retention-Analysis" class="button large">View Project</a></li>
+								</ul>
+							</article>
 
-						<!-- Posts -->
+							<!-- Posts -->
 							<section class="posts">
-								<article> <!--Data Exploration using SQL-->
-									<header>
-										<h2><a href="https://github.com/adunoluwa1/SQL-Data-Exploration">Data Exploration in SQL<br />
-										</a></h2>
-									</header>
-									<a href="https://github.com/adunoluwa1/SQL-Data-Exploration" class="image fit"><img src="images/SQL.jpg" alt="" /></a>
-									<p>In this project I answered key business questions by manipulating and extracting insights from data using <b>SQL</b>.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/adunoluwa1/SQL-Data-Exploration" class="button">View Project</a></li>
-									</ul>
-								</article>
 								<article> <!--Content and Sentiment Analysis-->
 									<header>
 										<h2><a href="https://github.com/adunoluwa1/PBI-Social-Buzz-Content-Analysis">Content and Sentiment Analysis<br />
@@ -311,13 +329,29 @@
 										<li><a href="https://github.com/adunoluwa1/PBI-Employee-Attrition-Analysis" class="button">View Project</a></li>
 									</ul>
 								</article>
+																<article> <!--Data Exploration using SQL-->
+									<header>
+										<h2><a href="https://github.com/adunoluwa1/SQL-Data-Exploration">Data Exploration in SQL<br />
+										</a></h2>
+									</header>
+									<a href="https://github.com/adunoluwa1/SQL-Data-Exploration" class="image fit"><img src="images/SQL.jpg" alt="" /></a>
+									<p>In this project I answered key business questions by manipulating and extracting insights from data using <b>SQL</b>.</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/adunoluwa1/SQL-Data-Exploration" class="button">View Project</a></li>
+									</ul>
+								</article>
 								<article> <!--Loan Delinquency Predictive Analysis-->
 									<header>
 										<h2><a href="https://github.com/adunoluwa1/ML-Loan-Delinquency-Prediction">Loan Delinquency Predictive Analysis <br />
 										</a></h2>
 									</header>
 									<a href="https://github.com/adunoluwa1/ML-Loan-Delinquency-Prediction" class="image fit"><img src="images/Loan Delinquency.jpg" alt="" /></a>
-									<p>I predicted customer loan delinquency rollover using Machine Learning on <b>Python</b>.</p>
+									<p> Built a machine learning solution to predict whether borrowers in early delinquency (1–30 days past due) would roll into later delinquency stages, supporting proactive collections strategies.
+										Performed end-to-end data prep, feature engineering, EDA, and model training in Python. Evaluated multiple classifiers, with tree-based models (Random Forest, Decision Tree) achieving ~90% test accuracy and identifying key drivers of delinquency risk.
+									</p>
+									<p>
+										<b>Tech Stack</b> Python, Pandas, NumPy, Scikit-learn, Seaborn, Matplotlib
+									</p>
 									<ul class="actions special">
 										<li><a href="https://github.com/adunoluwa1/ML-Loan-Delinquency-Prediction" class="button">View Project</a></li>
 									</ul>
@@ -383,8 +417,8 @@
 									</ul>
 								</article>
 							</section>
-
-					</div>
+						</div>
+					</section>
 
 				<!-- Footer -->
 					<footer id="footer">
@@ -426,14 +460,42 @@
 			<a class="badge-base__link LI-simple-link" href="https://ca.linkedin.com/in/adunoluwaolutola?trk=profile-badge">Adunoluwa Olutola</a>
 		</div>
 		<!-- Scripts -->
-		<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.scrollex.min.js"></script>
-		<script src="assets/js/jquery.scrolly.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				document.addEventListener('DOMContentLoaded', function () {
+				const navLinks = document.querySelectorAll('#nav .links a[data-target]');
+				const sections = document.querySelectorAll('.tab-content');
 
+				navLinks.forEach(link => {
+					link.addEventListener('click', function (e) {
+					e.preventDefault();
+
+					// Remove active nav state
+					document.querySelectorAll('#nav .links li')
+						.forEach(li => li.classList.remove('active'));
+
+					// Hide all sections
+					sections.forEach(section => section.classList.remove('active'));
+
+					// Activate selected nav item
+					this.parentElement.classList.add('active');
+
+					// Show matching section
+					const target = this.dataset.target;
+					document.getElementById(target).classList.add('active');
+
+					// Optional: scroll to top of content
+					document.getElementById('main')
+						.scrollIntoView({ behavior: 'smooth' });
+					});
+				});
+				});
+			</script>
 	</body>
 </html>
